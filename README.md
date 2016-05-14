@@ -5,7 +5,7 @@ Home: https://github.com/redis/hiredis-py
 
 Package license: BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Python wrapper for hiredis
 
@@ -69,9 +69,15 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/hiredis-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/hiredis-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/hiredis-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/hiredis-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/hiredis-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/hiredis-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/version.svg)](https://anaconda.org/conda-forge/hiredis)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/downloads.svg)](https://anaconda.org/conda-forge/hiredis)
 
 
 Updating hiredis-feedstock
