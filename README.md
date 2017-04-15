@@ -11,6 +11,18 @@ Summary: Python wrapper for hiredis
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/hiredis-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/hiredis-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/hiredis-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/hiredis-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/hiredis-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/hiredis-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/version.svg)](https://anaconda.org/conda-forge/hiredis)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/downloads.svg)](https://anaconda.org/conda-forge/hiredis)
+
 Installing hiredis
 ==================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `hiredis` available on your platfo
 ```
 conda search hiredis --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/hiredis-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/hiredis-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/hiredis-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/hiredis-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/hiredis-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/hiredis-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/version.svg)](https://anaconda.org/conda-forge/hiredis)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/hiredis/badges/downloads.svg)](https://anaconda.org/conda-forge/hiredis)
 
 
 Updating hiredis-feedstock
