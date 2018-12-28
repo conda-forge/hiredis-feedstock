@@ -10,13 +10,17 @@ source:
     md5: c51e24f0ddf04acc554b0d3216dd2d09
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+    number: 1000
+    script: python -m pip install . --ignore-installed --no-deps -vv
 
 requirements:
     build:
+        - {{ compiler('c') }}
+    host:
+        - "{{ compiler('c') }}"
+    host:
         - python
-        - setuptools
+        - pip
     run:
         - python
 
@@ -32,3 +36,4 @@ about:
 extra:
     recipe-maintainers:
         - kwilcox
+        - mariusvniekerk
