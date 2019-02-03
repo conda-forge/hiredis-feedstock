@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "1.0.0" %}
 
 package:
     name: hiredis
@@ -7,10 +7,10 @@ package:
 source:
     fn: hiredis-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/h/hiredis/hiredis-{{ version }}.tar.gz
-    md5: c51e24f0ddf04acc554b0d3216dd2d09
+    md5: 46bc0d51bda994611bae77c044b1398b
 
 build:
-    number: 1000
+    number: 0
     script: python -m pip install . --ignore-installed --no-deps -vv
 
 requirements:
