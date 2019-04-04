@@ -10,12 +10,12 @@ source:
     md5: 46bc0d51bda994611bae77c044b1398b
 
 build:
-    number: 0
-    script: python -m pip install . --ignore-installed --no-deps -vv
+    number: 1
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
     build:
-        - {{ compiler('c') }}
+        - "{{ compiler('c') }}"
     host:
         - "{{ compiler('c') }}"
     host:
