@@ -5,19 +5,16 @@ package:
     version: {{ version }}
 
 source:
-    fn: hiredis-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/h/hiredis/hiredis-{{ version }}.tar.gz
-    md5: 46bc0d51bda994611bae77c044b1398b
+    sha256: e97c953f08729900a5e740f1760305434d62db9f281ac351108d6c4b5bf51795
 
 build:
-    number: 0
-    script: python -m pip install . --ignore-installed --no-deps -vv
+    number: 1
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
     build:
         - {{ compiler('c') }}
-    host:
-        - "{{ compiler('c') }}"
     host:
         - python
         - pip
@@ -30,7 +27,8 @@ test:
 
 about:
     home: https://github.com/redis/hiredis-py
-    license: BSD
+    license: BSD-3-Clause
+    license_file: COPYING
     summary: Python wrapper for hiredis
 
 extra:
