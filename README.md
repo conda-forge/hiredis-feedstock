@@ -3,7 +3,7 @@ About hiredis
 
 Home: https://github.com/redis/hiredis-py
 
-Package license: BSD
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
