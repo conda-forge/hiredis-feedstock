@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
     name: hiredis
@@ -6,10 +6,10 @@ package:
 
 source:
     url: https://pypi.python.org/packages/source/h/hiredis/hiredis-{{ version }}.tar.gz
-    sha256: e97c953f08729900a5e740f1760305434d62db9f281ac351108d6c4b5bf51795
+    sha256: aa59dd63bb3f736de4fc2d080114429d5d369dfb3265f771778e8349d67a97a4
 
 build:
-    number: 1
+    number: 0
     script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
