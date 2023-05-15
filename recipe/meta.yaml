@@ -30,7 +30,7 @@ test:
 about:
   home: https://github.com/redis/hiredis-py
   license: BSD-3-Clause
-  license_file: COPYING
+  license_file: LICENSE
   summary: Python wrapper for hiredis
 
 extra:
