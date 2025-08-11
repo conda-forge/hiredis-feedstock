@@ -297,4 +297,5 @@ Feedstock Maintainers
 
 * [@kwilcox](https://github.com/kwilcox/)
 * [@mariusvniekerk](https://github.com/mariusvniekerk/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
