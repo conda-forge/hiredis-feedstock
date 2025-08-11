@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  version: 3.2.1
+
+package:
+  name: hiredis
+  version: ${{ version }}
+
+source:
+  url: https://pypi.python.org/packages/source/h/hiredis/hiredis-${{ version }}.tar.gz
+  sha256: 5a5f64479bf04dd829fe7029fad0ea043eac4023abc6e946668cbbec3493a78d
+
+build:
+  number: 0
+  script: python -m pip install . --no-deps --no-build-isolation -vv
+
+requirements:
+  build:
+    - if: build_platform != target_platform
+      then: 
+      - python
+      - cross-python_${{ target_platform }}
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - pip
+    - setuptools
+  run:
+    - python
+
+tests:
+  - python:
+      imports:
+        - hiredis
+      pip_check: true
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Python wrapper for hiredis
+  homepage: https://github.com/redis/hiredis-py
+
+extra:
+  recipe-maintainers:
+    - kwilcox
+    - mariusvniekerk
+    - synapticarbors
