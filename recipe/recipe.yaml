@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 3.2.1
+  version: "3.3.0"
 
 package:
   name: hiredis
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.python.org/packages/source/h/hiredis/hiredis-${{ version }}.tar.gz
-  sha256: 5a5f64479bf04dd829fe7029fad0ea043eac4023abc6e946668cbbec3493a78d
+  sha256: 105596aad9249634361815c574351f1bd50455dc23b537c2940066c4a9dea685
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
